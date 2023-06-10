@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { TextField, Button, Typography, AppBar, Box,Toolbar } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-  
+
+
   const ProfilePage = () => {
     const [income, setIncome] = useState(0);
     const [expense, setExpense] = useState(0);
   
     return (
       <div>
+
 
      <Box sx={{ flexGrow: 2 }}>
             <AppBar position="static" style={{background:"lightblue"}}>
