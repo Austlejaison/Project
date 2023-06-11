@@ -1,5 +1,14 @@
 .App {
+  min-height: 100vh;
   text-align: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXcGah03ZHXTldONzXptt92BZQbCC0H_HsGBQQUKAzQ&usqp=CAU&ec=48665699");
+  backface-visibility: 0.2;
+  background-repeat:space;
+  background-size:auto;
+  background-position: center;
+  background-attachment:scroll;
+  opacity: 1;
+
 }
 
 .App-logo {

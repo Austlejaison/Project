@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { TextField, Button, Typography, AppBar, Box,Toolbar } from '@mui/material';
-import { Link } from 'react-router-dom';
+import LogoutIcon from '@mui/icons-material/Logout';
+import HomeIcon from '@mui/icons-material/Home';
+import { TextField, Button, Typography, AppBar, Box,Toolbar, IconButton } from '@mui/material';
 
 
 
@@ -11,13 +12,20 @@ import { Link } from 'react-router-dom';
     return (
       <div>
 
-
-     <Box sx={{ flexGrow: 2 }}>
-            <AppBar position="static" style={{background:"lightblue"}}>
+     <Box sx={{ flexGrow: 0.5 }}>
+            <AppBar position="static" style={{background:"igthblue"}}>
                 <Toolbar>
-                    <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>Settings</Typography>
-                    <Button variant="contained" color="secondary"><Link to = {'/Add'} style = {{textDecoration:"none",color:"white"}}>HOME</Link></Button>
-                    <Button variant="contained" color="warning" ><Link to = {'/'} style = {{textDecoration:"none",color:"white"}}>LOGOUT</Link></Button>
+
+                <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>Settings</Typography>
+
+                <IconButton edge="start" color="inherit" aria-label="home">
+          <HomeIcon/>
+        </IconButton>
+  
+        <IconButton edge="end" color="inherit" aria-label="logout">
+          <LogoutIcon/>
+        </IconButton>
+     
                     
                 </Toolbar>
 
@@ -27,7 +35,7 @@ import { Link } from 'react-router-dom';
 
 
 
-        <Typography variant="h4" color={"blue"}><b>Profile</b></Typography>
+        <Typography variant="h3" color={"blue"}><b>Profile</b></Typography>
   
         
         <ul>
