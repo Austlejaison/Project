@@ -1,13 +1,14 @@
 
 import './App.css';
 import { Route, Routes } from 'react-router';
-import ProfilePage from './component/ProfilePage';
+import Profilo from './component/Profilo';
+
 
 function App() {
   return (
     <div className="App">
 <Routes>
-  <Route path='/' element={<ProfilePage/>}/>
+  <Route path='/' element={<Profilo/>}/>
 </Routes>
    </div>
   );
